@@ -1,0 +1,117 @@
+╔════════════════════════════════════════════════════════════╗
+║     🎬 GRABADOR AUTOMÁTICO invitamx - 30 SEGUNDOS        ║
+║                                                            ║
+║               INSTRUCCIONES RÁPIDAS (3 PASOS)            ║
+╚════════════════════════════════════════════════════════════╝
+
+┌────────────────────────────────────────────────────────────┐
+│ OPCIÓN 1: LA MÁS FÁCIL (Solo 1 click)                     │
+├────────────────────────────────────────────────────────────┤
+│                                                            │
+│  1. Haz doble click en:  EJECUTAR_AQUI.bat               │
+│                                                            │
+│  Eso es todo. El script hace el resto.                    │
+│                                                            │
+│  ✓ Instala dependencias (solo 1ª vez)                    │
+│  ✓ Abre Chrome automáticamente                           │
+│  ✓ Graba tu video                                        │
+│  ✓ Lo guarda en: videos\invitamx-demo-30s.webm          │
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────┐
+│ OPCIÓN 2: Con PowerShell (Si lo prefieres)               │
+├────────────────────────────────────────────────────────────┤
+│                                                            │
+│  1. Abre PowerShell en esta carpeta                       │
+│  2. Escribe: npm install                                  │
+│  3. Escribe: npm start                                    │
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────┐
+│ ✅ REQUISITOS                                              │
+├────────────────────────────────────────────────────────────┤
+│                                                            │
+│  ✓ Node.js instalado (https://nodejs.org)               │
+│  ✓ Conexión a internet                                   │
+│  ✓ Chrome (se descarga automáticamente)                  │
+│  ✓ ~500MB de espacio libre                               │
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────┐
+│ 🎯 ¿QUÉ VAS A VER?                                        │
+├────────────────────────────────────────────────────────────┤
+│                                                            │
+│  Chrome se abre solo                                      │
+│      ↓                                                     │
+│  Entra a invitamx.vercel.app                             │
+│      ↓                                                     │
+│  Elige tema "Dorado Clásico"                             │
+│      ↓                                                     │
+│  Llena datos (nombre, fecha, lugar)                      │
+│      ↓                                                     │
+│  Genera invitación                                        │
+│      ↓                                                     │
+│  Ves el resultado                                         │
+│      ↓                                                     │
+│  Clickea "Compartir"                                      │
+│      ↓                                                     │
+│  Chrome se cierra                                         │
+│      ↓                                                     │
+│  ✅ VIDEO GRABADO en: videos\invitamx-demo-30s.webm     │
+│                                                            │
+│  ⏱️  Todo en ~30-45 segundos                              │
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────┐
+│ 📁 ARCHIVOS EN ESTA CARPETA                               │
+├────────────────────────────────────────────────────────────┤
+│                                                            │
+│  EJECUTAR_AQUI.bat ........... 👈 Haz DOBLE CLICK aquí  │
+│  grabar-invitamx.js .......... El script grabador        │
+│  package.json ................ Configuración             │
+│  README.md ................... Docs completos            │
+│  INSTRUCCIONES_RAPIDAS.txt ... Este archivo              │
+│                                                            │
+│  (Se crea después de ejecutar)                            │
+│  videos/ ..................... Tu video aquí             │
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────┐
+│ 🎬 PRÓXIMO PASO: EDITAR EN CAPCUT                         │
+├────────────────────────────────────────────────────────────┤
+│                                                            │
+│  1. Abre CapCut                                           │
+│  2. Nuevo proyecto (vertical)                            │
+│  3. Importa: videos\invitamx-demo-30s.webm              │
+│  4. Agrega:                                              │
+│     - Texto ("¿XV años en 3 meses?", etc)               │
+│     - Música (30 segundos)                               │
+│     - Transiciones rápidas                               │
+│  5. Exporta en 1080×1920 (Meta Ads)                      │
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────┐
+│ ❌ ¿PROBLEMAS?                                             │
+├────────────────────────────────────────────────────────────┤
+│                                                            │
+│  Si Node.js no funciona:                                  │
+│  → Descarga de https://nodejs.org (LTS)                 │
+│  → Reinstala                                             │
+│  → Reinicia PowerShell                                   │
+│                                                            │
+│  Si Chrome no abre:                                       │
+│  → Cierra todas las pestañas de Chrome                   │
+│  → Vuelve a ejecutar                                      │
+│                                                            │
+│  Si el video no aparece:                                  │
+│  → Revisa que la carpeta tenga permisos de escritura     │
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+
+¿Listo? ¡Haz DOBLE CLICK en EJECUTAR_AQUI.bat! 🚀

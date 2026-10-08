@@ -1,0 +1,100 @@
+╔════════════════════════════════════════════════════════════╗
+║          📥 QUÉ DESCARGAR Y CÓMO USAR                    ║
+╚════════════════════════════════════════════════════════════╝
+
+TIENES QUE DESCARGAR ESTOS 6 ARCHIVOS EN LA MISMA CARPETA:
+
+1. ✅ grabar-invitamx.js ............. El script principal (OBLIGATORIO)
+2. ✅ package.json ................... Configuración (OBLIGATORIO)
+3. ✅ EJECUTAR_AQUI.bat .............. Atajo Windows (RECOMENDADO)
+4. ✅ INSTRUCCIONES_RAPIDAS.txt ...... Guía rápida
+5. ✅ README.md ...................... Documentación completa
+6. ✅ .gitignore ..................... Control de carpetas
+
+(Opcional pero útil)
+7. INSTALAR_Y_EJECUTAR.ps1 ........... Script alternativo PowerShell
+
+════════════════════════════════════════════════════════════
+
+INSTRUCCIONES:
+
+1️⃣  DESCARGA todos los archivos arriba ↑↑↑
+
+    (En este chat, en la sección de "Descargas" o en el 
+     botón de descargas de la interfaz)
+
+2️⃣  CREA una carpeta en tu PC:
+    
+    Ej: C:\invitamx-grabador\
+
+3️⃣  PEGA todos los archivos en esa carpeta
+
+4️⃣  DOBLE CLICK en: EJECUTAR_AQUI.bat
+
+    ✓ Se instalan las herramientas automáticamente (1ª vez)
+    ✓ Se abre Chrome solo
+    ✓ Se graba el video automáticamente
+    ✓ Listo en 30-45 segundos
+
+════════════════════════════════════════════════════════════
+
+ESTRUCTURA FINAL EN TU PC:
+
+C:\invitamx-grabador\
+├── EJECUTAR_AQUI.bat           ← Haz DOBLE CLICK aquí
+├── INSTALAR_Y_EJECUTAR.ps1     ← O aquí (alternativa)
+├── grabar-invitamx.js          ← El script
+├── package.json                ← Configuración
+├── README.md                   ← Instrucciones completas
+├── INSTRUCCIONES_RAPIDAS.txt   ← Guía rápida
+├── DESCARGA_ESTO.txt           ← Este archivo
+└── .gitignore                  ← Ignorar carpetas
+
+(Se crean después de ejecutar)
+├── node_modules/               ← Dependencias (auto)
+└── videos/                     ← Tu video aquí
+    └── invitamx-demo-30s.webm
+
+════════════════════════════════════════════════════════════
+
+¿TIENES TODO? ENTONCES:
+
+👉 Haz DOBLE CLICK en EJECUTAR_AQUI.bat
+
+Espera a que termine.
+
+Tu video estará en: videos\invitamx-demo-30s.webm
+
+════════════════════════════════════════════════════════════
+
+REQUISITOS PREVIOS:
+
+✓ Node.js instalado
+  (Si no lo tienes, descarga de https://nodejs.org)
+  
+✓ Conexión a internet (1ª instalación descarga ~500MB)
+
+✓ Chrome cerrado (opcional, pero recomendado)
+
+════════════════════════════════════════════════════════════
+
+¿TIENES DUDAS?
+
+Lee en este orden:
+
+1. INSTRUCCIONES_RAPIDAS.txt (3 minutos)
+2. README.md (10 minutos)
+
+¿Sigue sin funcionar? Abre PowerShell aquí y escribe:
+
+  npm install
+
+Luego:
+
+  npm start
+
+════════════════════════════════════════════════════════════
+
+¡Ahora sí! 🚀
+
+Descarga todo y ejecuta EJECUTAR_AQUI.bat

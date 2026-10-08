@@ -1,0 +1,16 @@
+{
+  "name": "invitamx-grabador",
+  "version": "1.0.0",
+  "description": "Grabador automático de video demo para invitamx - 30 segundos",
+  "main": "grabar-invitamx.js",
+  "scripts": {
+    "start": "node grabar-invitamx.js",
+    "grabar": "node grabar-invitamx.js",
+    "install-browsers": "playwright install chromium"
+  },
+  "author": "Isaac Rodriguez",
+  "license": "ISC",
+  "dependencies": {
+    "playwright": "^1.40.0"
+  }
+}
