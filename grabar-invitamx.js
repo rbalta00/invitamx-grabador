@@ -1,15 +1,40 @@
 #!/usr/bin/env node
 
 /**
- * Script para grabar video automático de invitamx demo (30 segundos)
- * 
+ * Script para grabar video automático del generador InvitaMX (30 segundos)
+ *
  * INSTRUCCIONES:
  * 1. Instala Node.js desde nodejs.org (si no lo tienes)
  * 2. Abre PowerShell en la carpeta donde copies este archivo
  * 3. npm install playwright
  * 4. node grabar-invitamx.js
- * 
+ *
  * El video se guardará en: ./videos/invitamx-demo-30s.webm
+ *
+ * ⚠️ IMPORTANTE (actualizado 2026-11-18): el generador vigente es
+ * `administradorinvitamx` (administradorinvitamx.vercel.app), NO
+ * invitamx.vercel.app (ese era otro repo, ya en pausa). El editor completo
+ * de administradorinvitamx está protegido con HTTP Basic Auth desde el
+ * 2026-07-31 (ver middleware.ts de ese repo) -- este script NO puede pasar
+ * esa pantalla de login de forma automática (no trae ni debe traer la
+ * contraseña del administrador escrita aquí). Para volver a grabar un video
+ * de demo del editor real hace falta O BIEN: (a) correr este script contra
+ * un `npm run dev` LOCAL de administradorinvitamx (sin middleware de Basic
+ * Auth en modo dev), o (b) adaptarlo para que Playwright inicie sesión con
+ * usuario/contraseña reales que tú mismo le pases por variable de entorno
+ * en el momento de correrlo (nunca escritos en este archivo).
+ *
+ * Además, el flujo real del editor de administradorinvitamx ya NO es un
+ * formulario lineal de 3 campos (nombre/fecha/lugar) seguido de un botón
+ * "Generar" -- es un editor con varias pestañas (Quinceañera, Direcciones,
+ * Agenda y Vestido, Familia, Regalos, Galería de Fotos, Invitados, A Medida)
+ * y vista previa en vivo; no hay un botón único de "generar la invitación
+ * completa". Los selectores de abajo se dejaron funcionales para la
+ * selección de TEMA (que sí sigue siendo una grilla de botones, cada uno
+ * con el nombre del tema, ej. "Dorado Clásico ✨" -- buscar "dorado" sigue
+ * encontrándolo), pero el resto del flujo (llenar 3 inputs y dar "Generar")
+ * ya no corresponde a esta app y necesitaría rediseñarse contra las pestañas
+ * reales si se quiere automatizar de nuevo.
  */
 
 const { chromium } = require('playwright');
@@ -42,8 +67,10 @@ const path = require('path');
   let videoPath = null;
 
   try {
-    console.log('📱 Abriendo invitamx.vercel.app...\n');
-    await page.goto('https://invitamx.vercel.app', { waitUntil: 'networkidle' });
+    console.log('📱 Abriendo administradorinvitamx.vercel.app...\n');
+    console.log('⚠️  Si el editor pide usuario/contraseña (Basic Auth), este script se\n' +
+                 '    quedará bloqueado ahí -- ver nota al inicio del archivo.\n');
+    await page.goto('https://administradorinvitamx.vercel.app', { waitUntil: 'networkidle' });
     
     console.log('⏳ Tiempo 0:00-0:02 → Pantalla inicial\n');
     await page.waitForTimeout(2000);
