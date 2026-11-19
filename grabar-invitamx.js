@@ -11,10 +11,13 @@
  *
  * El video se guardará en: ./videos/invitamx-demo-30s.webm
  *
- * ⚠️ IMPORTANTE (actualizado 2026-11-18): el generador vigente es
- * `administradorinvitamx` (administradorinvitamx.vercel.app), NO
- * invitamx.vercel.app (ese era otro repo, ya en pausa). El editor completo
- * de administradorinvitamx está protegido con HTTP Basic Auth desde el
+ * ⚠️ IMPORTANTE (actualizado 2026-11-20): el generador vigente es
+ * `administradorinvitamx`, con dirección pública **https://invitaciones.invitamx.app**
+ * (dominio nuevo desde el 19 de noviembre de 2026; el proyecto de Vercel
+ * sigue siendo el mismo, administradorinvitamx.vercel.app también sigue
+ * respondiendo). NO confundir con invitamx.vercel.app (ese es un repo
+ * totalmente distinto, ya en pausa, sin relación con este dominio nuevo).
+ * El editor completo de administradorinvitamx está protegido con HTTP Basic Auth desde el
  * 2026-07-31 (ver middleware.ts de ese repo) -- este script NO puede pasar
  * esa pantalla de login de forma automática (no trae ni debe traer la
  * contraseña del administrador escrita aquí). Para volver a grabar un video
@@ -67,10 +70,10 @@ const path = require('path');
   let videoPath = null;
 
   try {
-    console.log('📱 Abriendo administradorinvitamx.vercel.app...\n');
+    console.log('📱 Abriendo invitaciones.invitamx.app...\n');
     console.log('⚠️  Si el editor pide usuario/contraseña (Basic Auth), este script se\n' +
                  '    quedará bloqueado ahí -- ver nota al inicio del archivo.\n');
-    await page.goto('https://administradorinvitamx.vercel.app', { waitUntil: 'networkidle' });
+    await page.goto('https://invitaciones.invitamx.app', { waitUntil: 'networkidle' });
     
     console.log('⏳ Tiempo 0:00-0:02 → Pantalla inicial\n');
     await page.waitForTimeout(2000);

@@ -55,7 +55,7 @@ node grabar-invitamx.js
 ## 🎥 ¿QUÉ PASA AHORA?
 
 1. **Chrome se abre automáticamente** ← Mira tu pantalla
-2. Entra a invitamx.vercel.app
+2. Entra a invitaciones.invitamx.app
 3. Elige tema "Dorado Clásico"
 4. Llena datos (nombre: Hannia, fecha, lugar)
 5. Clickea "Generar invitación"

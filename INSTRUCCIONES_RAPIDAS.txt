@@ -46,7 +46,7 @@
 │                                                            │
 │  Chrome se abre solo                                      │
 │      ↓                                                     │
-│  Entra a invitamx.vercel.app                             │
+│  Entra a invitaciones.invitamx.app                       │
 │      ↓                                                     │
 │  Elige tema "Dorado Clásico"                             │
 │      ↓                                                     │
